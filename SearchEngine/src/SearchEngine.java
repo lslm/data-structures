@@ -17,13 +17,7 @@ public class SearchEngine {
         sitesDescobertos.add(primeiroSite);
 
         while(!fila.isEmpty()) {
-            // enquanto a fila não estiver vazia, navegaremos pelos sites dela
             String proximoSite = fila.remove();
-
-            // Fazer uma requisição para o site;
-            // Descobrir outros sites dentro dele;
-            // Adicionar os sites descobertos na fila;
-            // Adicionar sites descobertos em sitesDescobertos;
 
             String html = lerSite(proximoSite);
             String regex = "https://(\\w+\\.)*(\\w+)";
